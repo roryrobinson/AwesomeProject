@@ -4,7 +4,10 @@ import {View, Image, Text, StyleSheet} from 'react-native';
 const Home = props => {
   return (
     <View style={styles.container}>
-      <Image style={styles.globalLogo} source={require('./logo.png')} />
+      <Image
+        style={styles.globalLogo}
+        source={require('./images/_Export_globoticket-bug-black.png')}
+      />
       <Text style={styles.title}>Welcome to GlobalTicket</Text>
       <Text style={styles.subtitle}>{props.username}</Text>
       <View style={styles.textContainer}>

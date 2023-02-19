@@ -1,4 +1,4 @@
-import 'react-native-gesture-handler';
+import {GestureHandlerRootView, RectButton} from 'react-native-gesture-handler';
 import React from 'react';
 import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
@@ -22,7 +22,6 @@ function App(): JSX.Element {
           </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
-      <Home username="sports fan" />
     </>
   );
 }
