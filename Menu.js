@@ -6,11 +6,23 @@ const Menu = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <View style={styles.menu}>
       <TouchableOpacity
         onPress={() => navigation.navigate('Tickets')}
         style={styles.button}>
         <Text style={styles.buttontext}>Events</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Contact')}
+        style={styles.button}>
+        <Text style={styles.buttontext}>Contact Us</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate('News')}
+        style={styles.button}>
+        <Text style={styles.buttontext}>News</Text>
       </TouchableOpacity>
     </View>
   );
